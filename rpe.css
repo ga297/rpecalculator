@@ -1,12 +1,13 @@
+.table-scroll {
+	overflow-x: auto;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+}
 table {
+	width: 100%;
   border-collapse: collapse;
-  display: block;
-  overflow-x: scroll;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
 }
 
 td {
-  width: 80px;
   border: 1px solid black;
 }
