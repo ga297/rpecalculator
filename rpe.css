@@ -2,6 +2,10 @@ html, body, p, h1 {
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 body {
 		font-family: sans-serif;
 }
@@ -41,7 +45,7 @@ header {
 	border-radius: 5px;
 }
 
-.weight-input {
+.input {
 	text-align: center;
 }
 
@@ -80,4 +84,15 @@ footer {
 	text-align: center;
 	color: rgba(100, 100, 100, 1);
 	font-family: serif;
+}
+
+/* ここからcalorie.html */
+.select {
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+#height, #weight, #age, #gender, #target, #period {
+	border-radius: 5px;
+	font-size: 16px;
 }
