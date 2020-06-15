@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>RPE CALCULATOR</title>
-    <link rel="stylesheet" href="rpe.css">
+    <title>CALORIE CALCULATOR</title>
+    <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
     <header>
@@ -97,49 +97,6 @@
       <p class="copy-right">©yuyafukunaga</p>
     </footer>
 
-    <script>
-      var btn = document.getElementById("btn");
-      btn.addEventListener("click", function(){
-        var height = document.getElementById("height").value;
-        var weight = document.getElementById("weight").value;
-        var age = document.getElementById("age").value;
-        var bmi = weight / height * 100 / height * 100
-
-        var gender = document.getElementById("gender");
-        var genderList = gender.gender;
-        var a = genderList.value;
-
-        if (a == "male") {
-          var bmr = 13.397 * weight + 4.799 * height - 5.677 * age + 88.362;
-        } else {
-          var bmr = 9.247 * weight + 3.098 * height - 4.33 * age + 447.593;
-        }
-
-        const level1 = document.form1.level1;
-    	  const num = level1.selectedIndex;
-      	const b = level1.options[num].value;
-
-        if (b == 1) {
-          var tdee = bmr * 1.2;
-        } else if (b == 2) {
-          var tdee = bmr * 1.375;
-        } else if (b == 3) {
-          var tdee = bmr * 1.55;
-        } else if (b == 4) {
-          var tdee = bmr * 1.725;
-        } else {
-          var tdee = bmr * 1.9;
-        }
-
-        var target = document.getElementById("target").value;
-        var period = document.getElementById("period").value;
-        var calorie = tdee - (weight - target) * 7200 / period;
-
-        document.getElementById("bmi").innerHTML = Math.round(bmi * 10) / 10;
-        document.getElementById("bmr").innerHTML = Math.round(bmr) + "kcal";
-        document.getElementById("tdee").innerHTML = Math.round(tdee) + "kcal";
-        document.getElementById("calorie").innerHTML = Math.round(calorie) + "kcal";
-      })
-    </script>
+    <script type="text/javascript" src="calorie.js"></script>
   </body>
 </html>
