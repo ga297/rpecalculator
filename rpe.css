@@ -92,8 +92,12 @@ footer {
 	font-size: 16px;
 }
 
-#height, #weight, #age, #gender, #target, #period, #btn {
+#height, #weight, #age, #gender, #target, #period {
 	border-radius: 5px;
+	font-size: 16px;
+}
+
+#btn {
 	font-size: 16px;
 }
 
